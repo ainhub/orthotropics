@@ -1,0 +1,82 @@
+@import 'material-symbols';
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-source-serif;
+  }
+
+  .embla {
+    @apply w-full h-full overflow-hidden;
+  }
+
+  .embla_full {
+    @apply max-w-screen-md h-full overflow-hidden mx-auto;
+  }
+
+  .embla__container {
+    @apply flex w-full h-full gap-4 snap-x snap-mandatory;
+  }
+
+  .embla__slide {
+    @apply snap-start;
+  }
+
+  .custom-calendar.react-calendar {
+    @apply border border-gray-100 rounded shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .embla {
+    --slide-spacing: 1rem;
+    --slide-size: 20rem;
+    --slide-height: 19rem;
+  }
+
+  .embla_full {
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+    --slide-height: 19rem;
+  }
+
+  .embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    /* margin-left: calc(var(--slide-spacing) * -1); */
+  }
+
+  .embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    /* padding-left: var(--slide-spacing); */
+    position: relative;
+  }
+}

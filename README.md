@@ -7,6 +7,7 @@ npm install node-modules
 First, run the development server:
 
 ```bash
+npm run build
 npm run dev
 # or
 yarn dev

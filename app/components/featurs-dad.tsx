@@ -71,7 +71,7 @@ const FeaturesDad = ({ pages }: FeatureProps) => {
     <div className="mx-auto w-full grid md:grid-cols-2 grid-cols-1 gap-16 max-w-screen-xl pb-20">
       <div className="bg-brand-light-100 rounded-2xl p-8 flex flex-col gap-16">
         <div className="flex flex-col gap-8">
-          <h3 className="font-semibold text-4.5xl leading-44 text-brand-lightGreen-100">Condolences and continuing his mission</h3>
+          <h3 className="font-semibold text-4.5xl leading-44 text-brand-lightGreen-100">Condolences and Continuing His Mission</h3>
           <div className="flex flex-col gap-4 flex-1">
             <a className="flex items-center gap-4 group text-brand-lightGreen-100 text-xl leading-[26.4px] font-semibold" href="https://forms.gle/q1ZxUXJVuLRPQig5A" target="_blank">
               <span className="shrink-0 w-10 h-10 rounded-full bg-brand-green-dark rounded-full inline-flex items-center justify-center material-symbols-outlined text-brand-light-400">
